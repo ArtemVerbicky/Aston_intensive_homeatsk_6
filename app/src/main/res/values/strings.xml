@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Aston_intensive_hometask_6</string>
+    <string name="contact_image_description">contact image</string>
+    <string name="find_contact">find contact...</string>
+    <string name="name">name</string>
+    <string name="surname">surname</string>
+    <string name="phone_number">phone number</string>
+    <string name="apply_changes">apply changes</string>
+</resources>

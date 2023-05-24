@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="horizontal_margin">8dp</dimen>
+    <dimen name="horizontal_margin_mid">16dp</dimen>
+    <dimen name="vertical_margin">8dp</dimen>
+    <dimen name="contact_name_text_size">24sp</dimen>
+    <dimen name="contact_phone_number_text_size">16sp</dimen>
+    <dimen name="layout_padding">8dp</dimen>
+    <dimen name="image_size">80dp</dimen>
+</resources>

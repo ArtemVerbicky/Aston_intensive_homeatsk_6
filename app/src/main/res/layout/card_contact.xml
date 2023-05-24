@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/layout_padding">
+
+    <ImageView
+        android:id="@+id/contact_image"
+        android:layout_width="@dimen/image_size"
+        android:layout_height="@dimen/image_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/contact_image_description" />
+
+    <TextView
+        android:id="@+id/contact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/contact_image"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Ivan"
+        android:textStyle="bold"
+        android:textSize="@dimen/contact_name_text_size"
+        android:layout_marginStart="@dimen/horizontal_margin"/>
+
+    <TextView
+        android:id="@+id/contact_surname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/contact_name"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Ivanov"
+        android:textStyle="bold"
+        android:textSize="@dimen/contact_name_text_size"
+        android:layout_marginStart="@dimen/horizontal_margin"/>
+
+    <TextView
+        android:id="@+id/contact_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/contact_image"
+        app:layout_constraintTop_toBottomOf="@id/contact_name"
+        tools:text="+79991690573"
+        android:layout_marginTop="@dimen/vertical_margin"
+        android:textSize="@dimen/contact_phone_number_text_size"
+        android:layout_marginStart="@dimen/horizontal_margin"/>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/contact_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="contact_image,contact_name,contact_surname, contact_phone_number"
+        app:barrierDirection="bottom"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
